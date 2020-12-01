@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": ".",
+      "checkJs": false,
+      "experimentalDecorators": true,
+      "isolatedModules": true,
+      "jsx": "react-native",
+      "lib": ["es6", "dom"],
+      "module": "esnext",
+      "moduleResolution": "node",
+      "noEmit": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "paths": {
+        "*": ["src/*", "src/*.ios", "src/*.android"]
+      },
+      "sourceMap": true,
+      "strictNullChecks": true,
+      "target": "esnext",
+      "skipLibCheck": true
+    },
+    "exclude": ["node_modules"],
+    "include": ["src"]
+  }
+  

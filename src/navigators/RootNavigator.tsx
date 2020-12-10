@@ -6,8 +6,10 @@ import {
 import {createStackNavigator} from '@react-navigation/stack';
 import {PrimaryNavigator} from './PrimaryNavigator';
 import {ModalNavigator} from './ModalNavigator';
+import {TabNavigator} from './TabNavigator';
 
 export type RootParamList = {
+  tabNavigator: undefined;
   primaryStack: undefined;
   modalStack: undefined;
 };
@@ -17,10 +19,8 @@ const Stack = createStackNavigator<RootParamList>();
 const RootStack = () => (
   <Stack.Navigator
     mode="modal"
-    screenOptions={{
-      headerShown: false,
-      gestureEnabled: true,
-    }}>
+    screenOptions={{headerShown: false, gestureEnabled: true}}>
+    <Stack.Screen name="tabNavigator" component={TabNavigator} />
     <Stack.Screen name="primaryStack" component={PrimaryNavigator} />
     <Stack.Screen name="modalStack" component={ModalNavigator} />
   </Stack.Navigator>

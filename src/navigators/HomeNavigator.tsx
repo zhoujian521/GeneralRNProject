@@ -4,8 +4,8 @@ import {
   StackHeaderTitleProps,
 } from '@react-navigation/stack';
 
-import OneScreen from '../screens/FirstStack/One/OneScreen';
-import TwoScreen from '../screens/FirstStack/Two/TwoScreen';
+import OneScreen from '../screens/HomeStack/One/OneScreen';
+import TwoScreen from '../screens/HomeStack/Two/TwoScreen';
 
 import {Text, Button} from 'react-native';
 
@@ -23,14 +23,14 @@ const renderBtn = () => (
   />
 );
 
-export type PrimaryParamList = {
+export type HomeParamList = {
   one: undefined;
   two: undefined;
 };
 
-const Stack = createStackNavigator<PrimaryParamList>();
+const Stack = createStackNavigator<HomeParamList>();
 
-export const PrimaryNavigator = () => (
+export const HomeNavigator = () => (
   <Stack.Navigator
     screenOptions={{
       headerShown: true,

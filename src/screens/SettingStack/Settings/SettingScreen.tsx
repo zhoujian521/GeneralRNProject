@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 import {useNavigation, useFocusEffect} from '@react-navigation/native';
 
-const OneScreen = () => {
+const SettingScreen = () => {
   const navigation = useNavigation();
 
   useFocusEffect(() => {
@@ -23,7 +23,7 @@ const OneScreen = () => {
   );
 };
 
-export default OneScreen;
+export default SettingScreen;
 
 const styles = StyleSheet.create({
   container: {

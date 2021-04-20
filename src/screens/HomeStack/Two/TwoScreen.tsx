@@ -1,14 +1,14 @@
-import React, {useEffect, useLayoutEffect} from 'react';
-import {View, Text, StyleSheet, Button, StatusBar} from 'react-native';
-import {TwoScreenProps} from './TwoScreen.type';
+import React, { useEffect, useLayoutEffect } from 'react';
+import { View, Text, StyleSheet, Button, StatusBar } from 'react-native';
+import { TwoScreenProps } from './TwoScreen.type';
 
 // import {useNavigation, useRoute} from '@react-navigation/native';
 // const navigation = useNavigation();
 // const route = useRoute();
 
-const TwoScreen = ({navigation, route}: TwoScreenProps) => {
+const TwoScreen = ({ navigation, route }: TwoScreenProps) => {
   useLayoutEffect(() => {
-    navigation.setOptions({headerTitle: '999'});
+    navigation.setOptions({ headerTitle: '999' });
   }, [navigation]);
 
   useEffect(() => {
@@ -20,10 +20,7 @@ const TwoScreen = ({navigation, route}: TwoScreenProps) => {
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#6a51ae" />
       <Text>Two Screen</Text>
-      <Button
-        title="Update the title"
-        onPress={() => navigation.setOptions({title: 'Updated!'})}
-      />
+      <Button title="Update the title" onPress={() => navigation.setOptions({ title: 'Updated!' })} />
     </View>
   );
 };

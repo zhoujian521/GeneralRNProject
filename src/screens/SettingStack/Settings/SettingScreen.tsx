@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
-import {useNavigation, useFocusEffect} from '@react-navigation/native';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 
 const SettingScreen = () => {
   const navigation = useNavigation();
@@ -11,14 +11,8 @@ const SettingScreen = () => {
   return (
     <View style={styles.container}>
       <Text>One Screen</Text>
-      <Button
-        title="Go to TwoScreen"
-        onPress={() => navigation.navigate('two', {params: 111, sort: 222})}
-      />
-      <Button
-        title="Go to ModalScreen"
-        onPress={() => navigation.navigate('modalStack')}
-      />
+      <Button title="Go to TwoScreen" onPress={() => navigation.navigate('two', { params: 111, sort: 222 })} />
+      <Button title="Go to ModalScreen" onPress={() => navigation.navigate('modalStack')} />
     </View>
   );
 };

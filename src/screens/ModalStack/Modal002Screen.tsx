@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const Modal002Screen = () => {
   const navigation = useNavigation();

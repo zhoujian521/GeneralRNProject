@@ -1,10 +1,7 @@
 import React from 'react';
-import {
-  NavigationContainer,
-  NavigationContainerRef,
-} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {ModalNavigator} from './ModalNavigator';
+import { NavigationContainer, NavigationContainerRef } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { ModalNavigator } from './ModalNavigator';
 import DrawerNavigator from './DrawerNavigator';
 
 export type RootParamList = {
@@ -16,9 +13,7 @@ export type RootParamList = {
 const Stack = createStackNavigator<RootParamList>();
 
 const RootStack = () => (
-  <Stack.Navigator
-    mode="modal"
-    screenOptions={{headerShown: false, gestureEnabled: true}}>
+  <Stack.Navigator mode="modal" screenOptions={{ headerShown: false, gestureEnabled: true }}>
     <Stack.Screen name="drawerNavigator" component={DrawerNavigator} />
     <Stack.Screen name="modalStack" component={ModalNavigator} />
   </Stack.Navigator>

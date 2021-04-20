@@ -1,6 +1,6 @@
-import {RouteProp} from '@react-navigation/native';
-import {StackNavigationProp} from '@react-navigation/stack';
-import {HomeParamList} from '../../../navigators/HomeNavigator';
+import { RouteProp } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { HomeParamList } from '../../../navigators/HomeNavigator';
 
 type TwoScreenRouteProp = RouteProp<HomeParamList, 'two'>;
 type TwoScreenNavigationProp = StackNavigationProp<HomeParamList, 'two'>;

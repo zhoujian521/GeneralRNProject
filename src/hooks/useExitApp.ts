@@ -1,10 +1,6 @@
-import {useCallback} from 'react';
-import {
-  useFocusEffect,
-  useNavigation,
-  useRoute,
-} from '@react-navigation/native';
-import {BackHandler, ToastAndroid} from 'react-native';
+import { useCallback } from 'react';
+import { useFocusEffect, useNavigation, useRoute } from '@react-navigation/native';
+import { BackHandler, ToastAndroid } from 'react-native';
 
 export const useExitApp = (): void => {
   const navigation = useNavigation();

@@ -1,6 +1,6 @@
 import React from 'react';
-import {createDrawerNavigator} from '@react-navigation/drawer';
-import {TabNavigator} from './TabNavigator';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { TabNavigator } from './TabNavigator';
 import NoticeScreen from '../screens/DrawerStack/NoticeScreen';
 
 export type DrawerParamList = {

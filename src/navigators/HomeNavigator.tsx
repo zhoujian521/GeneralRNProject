@@ -1,13 +1,10 @@
 import * as React from 'react';
-import {
-  createStackNavigator,
-  StackHeaderTitleProps,
-} from '@react-navigation/stack';
+import { createStackNavigator, StackHeaderTitleProps } from '@react-navigation/stack';
 
 import OneScreen from '../screens/HomeStack/One/OneScreen';
 import TwoScreen from '../screens/HomeStack/Two/TwoScreen';
 
-import {Text, Button} from 'react-native';
+import { Text, Button } from 'react-native';
 
 const renderTitle = (props: StackHeaderTitleProps) => {
   console.log('renderTitle ==>', props);
@@ -35,9 +32,9 @@ export const HomeNavigator = () => (
     screenOptions={{
       headerShown: true,
       gestureEnabled: true,
-      headerStyle: {backgroundColor: '#f4511e'},
+      headerStyle: { backgroundColor: '#f4511e' },
       headerTintColor: '#fff',
-      headerTitleStyle: {fontWeight: 'bold'},
+      headerTitleStyle: { fontWeight: 'bold' },
     }}>
     <Stack.Screen name="one" component={OneScreen} />
     <Stack.Screen
@@ -45,7 +42,7 @@ export const HomeNavigator = () => (
       component={TwoScreen}
       options={{
         title: 'My home',
-        headerStyle: {backgroundColor: '#666666'},
+        headerStyle: { backgroundColor: '#666666' },
         headerTitle: (props) => renderTitle(props),
         headerRight: () => renderBtn(),
       }}
